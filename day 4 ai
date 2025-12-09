@@ -1,0 +1,4 @@
+fruits=["apple,"banana,"mango,"orange"]
+        print ("list of fruits:")
+        for f in fruits:
+        print (f)
