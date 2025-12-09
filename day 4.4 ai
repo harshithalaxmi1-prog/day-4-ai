@@ -1,0 +1,25 @@
+# Student Marks Analyzer
+
+names = []
+marks = []
+
+n = int(input("Enter number of students: "))
+
+for i in range(n):
+    name = input("Enter student name: ")
+    mark = int(input("Enter marks: "))
+    names.append(name)
+    marks.append(mark)
+
+# Finding topper
+highest = marks[0]
+pos = 0
+
+for i in range(len(marks)):
+    if marks[i] > highest:
+        highest = marks[i]
+        pos = i
+
+print("\nTopper Details:")
+print("Name:", names[pos])
+print("Marks:", highest)
